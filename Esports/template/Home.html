@@ -1,0 +1,244 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportopia - Home Page</title>
+    <link rel="stylesheet" href="{% static 'CSSFiles/commonStyle.css'%}">
+    <link rel="stylesheet" href="{% static 'CSSFiles/homestyle.css'%}">
+    <link rel="stylesheet" href="{% static 'CSSFiles/Nav.css'%}">
+    <link rel="stylesheet" href="{% static 'CSSFiles/Footer.css'%}">
+
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="{%static 'Assests/Images/logo2.png'%}" alt="Demo Image">
+            <div id="Name">
+                <p id="p1">
+                    ESPORTOPIA
+                </p>
+                <p>
+                    PARADIZE FOR GAMERS
+                </p>
+            </div>
+        </div>
+        <div id="NavBar">
+            <ul>
+                <li>
+                    <a href="home" id="active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="ranking">
+                        Ranking
+                    </a>
+                </li>
+                <li>
+                    <a href="contest">
+                        Contest
+                    </a>
+                </li>
+                <li id="about">
+                    <a href="about">
+                        AboutUs
+                    </a>
+                </li>
+                <!-- <li id="contact">
+                    <a href="Contact.html">
+                        Contact
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <div id="To_register">
+            <button id="login" onclick="login()">
+                Login
+            </button>
+            <button id="signup" onclick="signup()">
+                Signup
+            </button>
+        </div>
+    </nav>
+
+    <div id="main_content">
+        <div id="head">
+            <h2>
+                CONTEST
+            </h2>
+            <div id="Filters">
+                <div id="game">
+                    <select name="Game" id="fav_game">
+                        <option value="">Choose Game</option>
+                        <option value="ALL">All</option>
+                        <option value="FreeFire">FreeFire</option>
+                        <option value="BGMI">BGMI</option>
+                        <option value="COD">Call of Duty</option>
+                    </select>
+                </div>
+                <div id="contesttype">
+                    <select name="contest" id="contest">
+                        <option value="">Contest Type</option>
+                        <option value="ALL">All</option>
+                        <option value="Free">Free</option>
+                        <option value="Paid">Paid</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="contest_list">
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+            <div class="contest" onclick="tocontest()">
+                <div>
+                    <img src="{%static 'Assests/Images/logo2.png'%}" alt="GameLogo" class="gameLogo">
+                </div>
+                <div class="content">
+                    <p class="contest_name">
+                        Contest Name
+                    </p>
+                    <p class="contest_timing">
+                        Contest Timing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>
+            Follow Us On
+        </h2>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com">
+                    <img src="{%static 'Assests/Images/instagram.png'%}" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com">
+                    <img src="{%static 'Assests/Images/linkedin.png'%}" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <img src="{%static 'Assests/Images/twitter.png'%}" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">
+                    <img src="{%static 'Assests/Images/youtube.png'%}" alt="Youtube">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="{%static 'JSfiles/first.js'%}"></script>
+
+</html>

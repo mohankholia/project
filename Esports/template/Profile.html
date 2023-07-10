@@ -1,0 +1,183 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportopia - Home Page</title>
+    <link rel="stylesheet" href="{%static 'CSSFiles/commonStyle.css'%}">
+    <link rel="stylesheet" href="{%static 'CSSFiles/Nav.css'%}">
+    <link rel="stylesheet" href="{%static 'CSSFiles/Footer.css'%}">
+    <link rel="stylesheet" href="{%static 'CSSFiles/Profile.css'%}">
+    <link rel="stylesheet" href="{%static 'CSSFiles/homestyle.css'%}">
+    <script src="{%static 'JSfiles/profile.js'%}"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="{%static 'Assests/Images/logo2.png'%}" alt="Demo Image">
+            <div id="Name">
+                <p id="p1">
+                    ESPORTOPIA
+                </p>
+                <p>
+                    PARADIZE FOR GAMERS
+                </p>
+            </div>
+        </div>
+        <div id="NavBar">
+            <ul>
+                <li>
+                    <a href="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="ranking">
+                        Ranking
+                    </a>
+                </li>
+                <li>
+                    <a href="contest">
+                        Contest
+                    </a>
+                </li>
+                <li id="about">
+                    <a href="about" id="active">
+                        AboutUs
+                    </a>
+                </li>
+                <!-- <li id="contact">
+                    <a href="Contact.html">
+                        Contact
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <div id="To_register">
+            <img src=".{%static 'Assests/Images/user.png'%}" alt="ProfileLogo" id="prf_img">
+        </div>
+    </nav>
+
+    <div id="main_container">
+        <div id="info">
+            <div id="img">
+                <img src=".{%static 'Assests/Images/user.png'%}" alt="ProfileLogo" id="prf_img">
+            </div>
+            <div id="details">
+                <form>
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name" value="{{name}}" disabled>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" value="{{email}}" disabled>
+                    </div>
+                    <div>
+                        <label for="mobile">Mobile</label><br>
+                        <input type="number" name="mobile" id="mobile" value="{{phone}}" disabled>
+                    </div>
+                    <div id="btns">
+                        <input type="button" value="Edit Details" onclick="edit()" class="button" id="edt">
+                        <input type="submit" value="Submit" style="display: none;" class="button" id="sub">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="stats">
+            <div id="summary">
+                5/10
+            </div>
+            <div id="win" class="score">
+                <div>
+
+                </div>
+                <p id="win_count">
+                    5 WON
+                </p>
+            </div>
+            <div id="lost" class="score">
+                <div>
+
+                </div>
+                <p id="lost_count">
+                    5 LOST
+                </p>
+            </div>
+            <div id="total" class="score">
+                <div>
+
+                </div>
+                <p id="total_count">
+                    10 PLAYED
+                </p>
+            </div>
+        </div>
+        <div id="history">
+            <div id="last_contest">
+                <h2>
+                    Last Contest
+                </h2>
+                <div class="contest">
+                    <div>
+                        <img src="{%static 'Assests/Images/logo.png'%}" alt="GameLogo" class="gameLogo">
+                    </div>
+                    <div class="content">
+                        <p class="contest_name">
+                            Contest Name
+                        </p>
+                        <p class="contest_timing">
+                            Contest Timing
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="fav_games">
+                <h2>
+                    Favourite Games
+                </h2>
+                <div id="games">
+                    <img src=".{%static 'Assests/Images/demo.png'%}" alt="Game1">
+                    <img src=".{%static 'Assests/Images/demo.png'%}" alt="Game1">
+                    <img src=".{%static 'Assests/Images/demo.png'%}" alt="Game1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2>
+            Follow Us On
+        </h2>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com">
+                    <img src="{%static 'Assests/Images/instagram.png'%}" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com">
+                    <img src="{%static 'Assests/Images/linkedin.png'%}" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <img src="{%static 'Assests/Images/twitter.png'%}" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">
+                    <img src="{%static 'Assests/Images/youtube.png'%}" alt="Youtube">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="{%static 'JSfiles/first.js'%}"></script>
+
+</html>

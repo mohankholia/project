@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportopia - Home Page</title>
+    <link rel="stylesheet" href="../CSSFiles/commonStyle.css">
+    <link rel="stylesheet" href="../CSSFiles/Nav.css">
+    <link rel="stylesheet" href="../CSSFiles/Footer.css">
+    <link rel="stylesheet" href="../CSSFiles/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="../Assests/Images/logo2.png" alt="Demo Image">
+            <div id="Name">
+                <p id="p1">
+                    ESPORTOPIA
+                </p>
+                <p>
+                    PARADIZE FOR GAMERS
+                </p>
+            </div>
+        </div>
+        <div id="NavBar">
+            <ul>
+                <li>
+                    <a href="Home.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="Ranking.html">
+                        Ranking
+                    </a>
+                </li>
+                <li>
+                    <a href="Contest.html">
+                        Contest
+                    </a>
+                </li>
+                <li id="about">
+                    <a href="About.html">
+                        AboutUs
+                    </a>
+                </li>
+                <li id="contact">
+                    <a href="Contact.html" id="active">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="To_register">
+            <button id="login" onclick="login()">
+                Login
+            </button>
+            <button id="signup" onclick="signup()">
+                Signup
+            </button>
+        </div>
+    </nav>
+    <div id="main_container">
+
+        <form>
+            <div id="you_e">
+                <label for="Email">
+                    Enter You Email
+                </label><br>
+                <input type="email" name="Email" id="Email">
+            </div>
+            <div>
+                <label for="Message">
+                    Enter Your Message
+                </label><br>
+                <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <button>Send Message</button>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <h2>
+            Follow Us On
+        </h2>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com">
+                    <img src="../Assests/Images/instagram.png" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com">
+                    <img src="../Assests/Images/linkedin.png" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <img src="../Assests/Images/twitter.png" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">
+                    <img src="../Assests/Images/youtube.png" alt="Youtube">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="../JSfiles/home.js"></script>
+
+</html>

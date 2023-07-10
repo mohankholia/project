@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #303232;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button,.button{
+    padding: 4px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 4vw;;
+    border: rgb(42, 127, 213);
+    color: white;
+    border-radius: 5px;
+    background-color:rgb(48, 145, 243);
+    margin-right:3px;
+}
+button:hover,.button:hover{
+    background-color:rgb(36, 110, 184) ;
+}
+
+@media screen and (min-width:424.5px) {
+    button, .button{
+        font-size: 1.5vw;
+        padding: 5px;
+        margin-right: 10px;
+    }
+}

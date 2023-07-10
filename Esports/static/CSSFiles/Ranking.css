@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Bruno+Ace+SC&display=swap');
+#LeaderBoard{
+    align-self: center;
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 25px;
+}
+.lrge{
+    display: none;
+}
+td img{
+    width: 12vw;
+}
+
+th,td{
+    border-bottom: 2px solid black;
+    margin-bottom: 6px;
+    font-family: Bruno Ace SC;
+    color: rgb(53, 50, 50);
+    padding:4px;
+    text-align: center;
+    width: fit-content;
+
+}
+.name{
+    width: 40vw;
+}
+td{
+    color: black;
+}
+td div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (min-width:430px) {
+    .lrge{
+        display:table-cell;
+    }
+    td img{
+        width: 4vw;
+    }
+}

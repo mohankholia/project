@@ -1,0 +1,82 @@
+
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#Filters{
+    display: flex;
+}
+select{
+    margin-right:5px;
+    font-size: 4vw;
+    width: 22vw;
+    padding: 4px;
+    border-radius: 25px;
+    background-color: rgb(76, 76, 76);
+    color: white;
+}
+#head h2{
+    color: white;
+    font-size: 6vw;
+}
+.gameLogo{
+    width: 18vw;
+}
+#contest_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contest{
+    display: flex;
+    cursor: pointer;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 65vw;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: rgb(207, 200, 200);
+}
+.contest:hover{
+    background-color: rgb(145, 124, 124);
+}
+.content{
+    margin: 4px;
+}
+.contest_name{
+    font-size: 6vw;
+}
+.contest_timing{
+    font-size: 4vw;
+    color: rgb(104, 104, 104);
+}
+@media screen and (min-width:430px) {
+    select{
+        font-size: 2vw;
+        width: auto;
+    }
+    #head h2{
+        font-size: 3vw;
+    }
+    #contest_list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .gameLogo{
+        width: 8vw;
+    }
+    .contest_name{
+        font-size: 2.5vw;
+    }
+    .contest_timing{
+        font-size: 2vw;
+    }
+    .contest{
+        width: 30vw;
+    }
+}

@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esportopia - Home Page</title>
+    <link rel="stylesheet" href="{%static 'CSSFiles/commonStyle.css'%}">
+    <link rel="stylesheet" href="{%static 'CSSFiles/Nav.css'%}">
+    <link rel="stylesheet" href="{%static 'CSSFiles/Footer.css'%}">
+    <link rel="stylesheet" href="{%static 'CSSFiles/about.css'%}">
+</head>
+
+<body>
+    <nav>
+        <div id="logo">
+            <img src="{%static 'Assests/Images/logo2.png'%}" alt="Demo Image">
+            <div id="Name">
+                <p id="p1">
+                    ESPORTOPIA
+                </p>
+                <p>
+                    PARADIZE FOR GAMERS
+                </p>
+            </div>
+        </div>
+        <div id="NavBar">
+            <ul>
+                <li>
+                    <a href="home">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="ranking">
+                        Ranking
+                    </a>
+                </li>
+                <li>
+                    <a href="contest">
+                        Contest
+                    </a>
+                </li>
+                <li id="about">
+                    <a href="about" id="active">
+                        AboutUs
+                    </a>
+                </li>
+                <!-- <li id="contact">
+                    <a href="Contact.html">
+                        Contact
+                    </a>
+                </li> -->
+            </ul>
+        </div>
+        <div id="To_register">
+            <button id="login" onclick="login()">
+                Login
+            </button>
+            <button id="signup" onclick="signup()">
+                Signup
+            </button>
+        </div>
+    </nav>
+    <div id="info">
+
+        <div class="card">
+            <img src="{%static 'Assests/Images/vijay.jfif'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Vijay Gunwant</h5>
+                <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BDFhTmNHFR9WDhjOe50%2BwyQ%3D%3D"
+                    target="_blank" class="button">LinkedIn</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{%static 'Assests/Images/profile.png'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Yuvraj Ahuja</h5>
+                <a href="https://www.linkedin.com/in/yuvraj-ahuja-a12561223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BElQjxmi6R3WIelItjrDKYg%3D%3D"
+                    target="_blank" class="button">LinkedIn</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{%static 'Assests/Images/mohan.jfif'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Mohan Kholiya</h5>
+                <a href="https://www.linkedin.com/in/mohan-kholiya-260074248?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BL4NVGRIuRU%2BPBwAYxIyMaA%3D%3D"
+                    target="_blank" class="button">LinkedIn</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{%static 'Assests/Images/vikash.jpg'%}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Vikash Sharma</h5>
+                <a href="https://www.linkedin.com/in/vicky-sharma-5257b5243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIFSFscC9QeCAyI2q%2F0g7ew%3D%3D"
+                    target="_blank" class="button">LinkedIn</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{%static 'Assests/Images/vinay.jfif'%}" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Vinay Pathak</h5>
+                <a href="https://www.linkedin.com/in/vinay-pathak-876bb41b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Boj%2B7Fq7ITxKIZejn8gyWyw%3D%3D"
+                    target="_blank" class="button">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>
+            Follow Us On
+        </h2>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com">
+                    <img src="{%static 'Assests/Images/instagram.png'%}" alt="Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com">
+                    <img src="{%static 'Assests/Images/linkedin.png'%}" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com">
+                    <img src="{%static 'Assests/Images/twitter.png'%}" alt="Twitter">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com">
+                    <img src="{%static 'Assests/Images/youtube.png'%}" alt="Youtube">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="{%static 'JSfiles/first.js'%}"></script>
+
+</html>

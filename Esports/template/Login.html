@@ -1,0 +1,58 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{%static 'CSSFiles/SignUp.css'%}">
+    </link>
+
+</head>
+
+<body>
+
+    <form action="welcome" method="post">
+        {%csrf_token%}
+        <div id="logo">
+            <img src="{%static 'Assests/Images/logo2.png'%}" alt="Demo Image">
+            <div id="Name">
+                <p id="p1">
+                    ESPORTOPIA
+                </p>
+                <p>
+                    PARADIZE FOR GAMERS
+                </p>
+            </div>
+        </div>
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password" required><br>
+            <a href="#" id="fgp">Forgot Password?</a>
+        </div>
+        <div>
+            <input type="submit" value="Login" id="SignUp_button">
+        </div>
+        <a id="to_signup" href="Signup">
+            Don't Have an Account?
+        </a>
+        <div>
+            <p id="message">
+                {% if messages %}
+
+                {% for message in messages %}
+                {{ message}}
+                {% endfor %}
+                {% endif %}
+
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>

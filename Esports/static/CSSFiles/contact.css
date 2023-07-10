@@ -1,0 +1,36 @@
+#main_container{
+    align-self: center;
+    background-color: aliceblue;
+    padding: 15px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#you_e{
+    align-self: flex-start;
+}
+textarea{
+    resize: none;
+}
+
+textarea,input{
+    width: 75vw;
+    border-radius: 8px;
+}
+input{
+    height: 4vh;
+}
+textarea:focus,input:focus{
+    outline: none;
+    border: 1px solid red;
+}
+@media screen and (min-width:430px) {
+    textarea,input{
+        width: 35vw;
+    }
+}
